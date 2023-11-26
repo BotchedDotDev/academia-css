@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia CSS</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div hx-get="/widgets/header.html" hx-trigger="load" hx-swap="innerHTML">
+        </div>
+        <div class="grid">
+            <h1>Academia CSS</h1>
+            <p>A simple CSS styling for the web that is heavily inspired by Academia's obsession with A4 paper size and the standard Times New Roman, 12px, 1.5 spacing.</p>
+            <p>Elaborate CSS is just Wordart for designers.</p>
+        </div>
+    </main>
+    <div hx-get="/widgets/footer.html" hx-trigger="load" hx-swap="innerHTML">
+    </div>
+
+     
+</body>
+</html>
