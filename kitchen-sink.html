@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia CSS</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Kitchen Sink | Academia CSS</title>
     <script src="https://unpkg.com/htmx.org@1.9.9" integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
     <main>
@@ -24,6 +24,10 @@
             <h6>h6 is 1em</h6>
             <p>paragraph text is 1em</p>
 
+            <blockquote>Blockquotes also are styled in order to help with highlighting some special quotes.</blockquote>
+
+            <hr>
+
             <h3>Images are also included:</h3>
             <h6>There is the narrow class:</h6>
             <img class="narrow" src="https://placehold.co/200x100" alt="">
@@ -40,8 +44,8 @@
             
         </div>
     </main>
-    <div hx-get="/widgets/footer.html" hx-trigger="load" hx-swap="innerHTML">
-    </div>
+    <footer hx-get="/widgets/footer.html" hx-trigger="load" hx-swap="innerHTML">
+    </footer>
 
      
 </body>
